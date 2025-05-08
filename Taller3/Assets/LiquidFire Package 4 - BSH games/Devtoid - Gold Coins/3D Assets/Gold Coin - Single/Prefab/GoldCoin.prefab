@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 4271735776560842}
   - component: {fileID: 33160559832521050}
   - component: {fileID: 23941041030839374}
+  - component: {fileID: 89726928929494865}
   m_Layer: 0
   m_Name: GoldCoin
   m_TagString: Untagged
@@ -115,3 +116,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &89726928929494865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667978803413412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328292143b449f5458a8bbe6d81841fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupDistance: 3

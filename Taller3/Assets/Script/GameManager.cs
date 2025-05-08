@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     private int Gold = 0; //50 puntos
     private int Silver = 0; //100 puntos
 
+    public int cantidadMoneda = 0;
+
     private void Awake()
     {
         if (Instance == null)
@@ -25,5 +27,11 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void AgregarMoneda(int value)
+    {
+        cantidadMoneda+=value;
+        Debug.Log("Monedas recogidas: " + cantidadMoneda);
     }
 }
