@@ -26,7 +26,7 @@ public class Coins : MonoBehaviour
         {
             // Sumar el valor al GameController
             GameManager.Instance.AgregarMoneda(coinValue);
-
+            
             // Destruir la moneda
             Destroy(gameObject);
 
