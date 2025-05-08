@@ -8,7 +8,6 @@ public class Coins : MonoBehaviour
     public float pickupDistance = 2f;
     public int coinValue = 50;
     private Transform player;
-    private GameController gameController;
 
 
     // Start is called before the first frame update
