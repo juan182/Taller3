@@ -80,4 +80,26 @@ public class Nivel3MovePlayer : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotate, rotationSpeed * Time.deltaTime);
         }
     }
+
+    public void ResetPlayerPosition()
+    {
+        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
+
+    public void hit()
+    {
+            ResetPlayerPosition();
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit collision)
+    {
+        //Enemigo
+        if (collision.gameObject.CompareTag("Enemie"))
+        {
+            // Lógica para manejar la colisión
+
+            hit();
+        }
+    }
 }
