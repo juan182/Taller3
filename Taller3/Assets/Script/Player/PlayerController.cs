@@ -40,8 +40,8 @@ public class Nivel3MovePlayer : MonoBehaviour
     void Update()
     {
         //Toma el valor de Horizontal
-        horizontal = Input.GetAxisRaw("Horizontal")*-1;
-        vertical = Input.GetAxisRaw("Vertical")*-1;
+        horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical");
 
         moveDirection = new Vector3(horizontal, 0, vertical);
         moveDirection.Normalize();
