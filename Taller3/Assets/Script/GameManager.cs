@@ -10,7 +10,9 @@ public class GameManager : MonoBehaviour
     //Recolectables
 
     public int cantidadMoneda = 0;
+    public int cantidadDiamante = 0;
     public TextMeshProUGUI textoMoneda;
+    public TextMeshProUGUI textoDiamante;
 
     private void Awake()
     {
@@ -33,5 +35,11 @@ public class GameManager : MonoBehaviour
         cantidadMoneda+=value;
         Debug.Log("Monedas recogidas: " + cantidadMoneda);
         textoMoneda.text = cantidadMoneda.ToString();
+    }
+
+    public void AgregarDiamante(int value)
+    {
+        cantidadDiamante += value;
+        textoDiamante.text = cantidadDiamante.ToString();
     }
 }
